@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import * as FBOStyles from './FeedBackOptions.styled';
 
-export const FeedbackOptions = ({ options, addFeedback }) => {
+const FeedbackOptions = ({ options, addFeedback }) => {
   return (
     <>
       <FBOStyles.Title>Please leave feedback</FBOStyles.Title>
@@ -25,3 +25,5 @@ FeedbackOptions.propTypes = {
   options: PropTypes.arrayOf(PropTypes.string.isRequired).isRequired,
   addFeedback: PropTypes.func.isRequired,
 };
+
+export default FeedbackOptions;

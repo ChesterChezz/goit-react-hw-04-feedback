@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import * as StatStyles from './Statistics.styled';
 
-export const Statistics = ({ state, total, percents }) => {
+const Statistics = ({ state, total, percents }) => {
   return (
     <>
       {Object.keys(state).map(key => (
@@ -17,8 +17,11 @@ export const Statistics = ({ state, total, percents }) => {
     </>
   );
 };
+
 Statistics.propTypes = {
   state: PropTypes.object.isRequired,
   total: PropTypes.number,
   percents: PropTypes.number,
 };
+
+export default Statistics;
